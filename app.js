@@ -20,7 +20,7 @@ const routes = require('./routes');
 app.use('/', routes);
 
 // Configurar el puerto de escucha
-const port = 5500;
+const port = 6000;
 
 // Iniciar el servidor
 app.listen(port, () => {
