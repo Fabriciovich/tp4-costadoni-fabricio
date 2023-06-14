@@ -14,15 +14,13 @@ app.use(morgan('combined'));
 app.use(express.json()); 
 
 // Importar las rutas desde el directorio 'routes'
-const routes = require('./routes');
+const routes = require('./routes/index');
 
 // Configurar las rutas
 app.use('/', routes);
 
-// Configurar el puerto de escucha
-const port = 6000;
-
 // Iniciar el servidor
-app.listen(port, () => {
-  console.log(`Servidor Express escuchando en el puerto ${port}`);
+app.listen(3000, () => {
+  console.log(`Servidor Express escuchando en el puerto ${3000}`);
 });
+
